@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Natan Developer" />
+    <title>Natan Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Anti-Flash Script for Dark Theme -->
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          document.documentElement.classList.add("dark-theme");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Top Header -->
+    <header class="main-header">
+      <div class="logo"><span class="logo-dot">●</span> PORTFOLIO</div>
+      <div class="header-controls">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- 3-Column Hero Layout -->
+    <main class="hero-container">
+      <!-- Left Section: Typography and Intro -->
+      <section class="left-col">
+        <div class="intro-content">
+          <h3 class="tagline">Hey. i'm Natan</h3>
+          <h1 class="main-title">
+            <span class="title-block">Full Stack</span>
+            <span class="title-serif">Developer</span>
+          </h1>
+
+          <p class="description">
+            Building innovative and user-centered digital solutions through
+            modern web development and thoughtful user experience design.
+          </p>
+
+          <a href="#contact" class="cta-button" id="cta-contact">
+            <span>CONTACT ME</span>
+            <span class="arrow-circle">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Middle Section: Portrait Arch Frame -->
+      <section class="mid-col">
+        <div class="arch-frame">
+          <img
+            src="images/natan.png"
+            alt="Solt - UI/UX & Brand Designer"
+            class="portrait-img"
+          />
+        </div>
+      </section>
+
+      <!-- Right Section: Stats vertical stack -->
+      <section class="right-col">
+        <div class="stats-wrapper">
+          <div class="stat-item">
+            <h2 class="stat-number">2+</h2>
+            <p class="stat-label">Years Experience</p>
+          </div>
+          <div class="stat-item">
+            <h2 class="stat-number">280+</h2>
+            <p class="stat-label">Projects Delivered</p>
+          </div>
+          <div class="stat-item">
+            <h2 class="stat-number">*99%</h2>
+            <p class="stat-label">Client Satisfaction</p>
+          </div>
+          <div class="stat-item">
+            <h2 class="stat-number">50</h2>
+            <p class="stat-label">Clients worldwide</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <!-- Left: Text Content -->
+        <div class="about-text-col">
+          <h2 class="about-heading">Who I Am</h2>
+          <div class="about-name-wrap">
+            <p class="about-subname">Natan Setyo Agung</p>
+            <div class="about-divider"></div>
+          </div>
+
+          <p class="about-body">
+            I am currently pursuing a degree in Informatics Engineering at Duta
+            Bangsa University. My main focus is Full-Stack Web Development,
+            where I continuously improve my skills in both frontend and backend
+            technologies. I enjoy learning new technologies, solving real-world
+            problems through programming, and developing applications that
+            provide meaningful experiences for users. Through academic projects
+            and personal initiatives, I strive to become a professional software
+            developer capable of creating innovative and impactful digital
+            solutions.
+          </p>
+          <p class="about-body">
+            I focus on translating creative ideas into high-fidelity web and
+            mobile applications, optimizing performance, and delivering
+            exceptional user experiences.
+          </p>
+
+          <div class="about-divider-bottom"></div>
+
+          <div class="about-actions">
+            <a href="#contact" class="about-cv-btn">
+              <span>Download CV</span>
+              <i class="fa-solid fa-download"></i>
+            </a>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/_nathansty.a?igsh=MWRkNmwxNWt1YWpzYQ%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/natan-setyo-agung-6a3763377?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/nathanstya"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Photo -->
+        <div class="about-photo-col">
+          <div class="about-photo-frame">
+            <img src="images/natan2.jpeg" alt="Natan" class="about-photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools & Tech Stack Section -->
+    <section id="techstack" class="tech-section">
+      <div class="tech-header">
+        <h2 class="tech-title">Tools & Tech Stack</h2>
+        <p class="tech-subtitle">
+          Teknologi dan tools yang saya gunakan untuk membangun aplikasi dan
+          solusi digital.
+        </p>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML"
+          />
+          <span>HTML</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS"
+          />
+          <span>CSS</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript"
+          />
+          <span>JavaScript</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+            alt="PHP"
+          />
+          <span>PHP</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            alt="Python"
+          />
+          <span>Python</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            alt="React"
+          />
+          <span>React</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+            alt="Next.js"
+            class="icon-invert"
+          />
+          <span>Next.js</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+            alt="Tailwind CSS"
+          />
+          <span>Tailwind CSS</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            alt="MySQL"
+          />
+          <span>MySQL</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            alt="Git"
+          />
+          <span>Git</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            alt="GitHub"
+            class="icon-invert"
+          />
+          <span>GitHub</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+            alt="VS Code"
+          />
+          <span>VS Code</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/antigravity.svg"
+            alt="Antigravity IDE"
+            class="icon-rounded"
+          />
+          <span>Antigravity IDE</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/kiro-color.svg"
+            alt="Kiro"
+            class="icon-rounded"
+          />
+          <span>Kiro</span>
+        </div>
+        <div class="tech-card">
+          <img
+            src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/codex-color.svg"
+            alt="Codex"
+            class="icon-rounded"
+          />
+          <span>Codex</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="projects-header">
+        <h2 class="projects-title">Projects</h2>
+        <p class="projects-subtitle">
+          Beberapa proyek yang telah saya kerjakan.
+        </p>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Cards injected by JS -->
+      </div>
+    </section>
+
+    <!-- Project Detail Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal-box">
+        <div class="modal-breadcrumb">
+          <button class="modal-back-btn" id="modal-close">
+            <i class="fa-solid fa-arrow-left"></i> Back
+          </button>
+          <span class="modal-breadcrumb-path"
+            >Projects <i class="fa-solid fa-chevron-right"></i>
+            <span id="modal-breadcrumb-title"></span
+          ></span>
+        </div>
+        <div class="modal-body">
+          <div class="modal-left">
+            <h1 class="modal-title" id="modal-title"></h1>
+            <div class="modal-divider"></div>
+            <p class="modal-desc" id="modal-desc"></p>
+            <div class="modal-stats">
+              <div class="modal-stat-card">
+                <span class="modal-stat-icon"
+                  ><i class="fa-solid fa-code"></i
+                ></span>
+                <div>
+                  <span class="modal-stat-num" id="modal-tech-count"></span>
+                  <span class="modal-stat-label">Total Teknologi</span>
+                </div>
+              </div>
+              <div class="modal-stat-card">
+                <span class="modal-stat-icon"
+                  ><i class="fa-solid fa-layer-group"></i
+                ></span>
+                <div>
+                  <span class="modal-stat-num" id="modal-feature-count"></span>
+                  <span class="modal-stat-label">Fitur Utama</span>
+                </div>
+              </div>
+            </div>
+            <div class="modal-links">
+              <a
+                href="#"
+                class="modal-link-btn"
+                id="modal-live-link"
+                target="_blank"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a
+                href="#"
+                class="modal-link-btn"
+                id="modal-github-link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i> Github
+              </a>
+            </div>
+            <div class="modal-tech-section">
+              <h3 class="modal-tech-heading">
+                <i class="fa-solid fa-code"></i> Technologies Used
+              </h3>
+              <div class="modal-tech-badges" id="modal-tech-badges"></div>
+            </div>
+          </div>
+          <div class="modal-right">
+            <div class="modal-img-frame">
+              <img src="" alt="" id="modal-img" class="modal-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-title-wrap">
+        <h1 class="contact-title">Contact me</h1>
+      </div>
+      <div class="contact-inner">
+        <!-- Left -->
+        <div class="contact-left">
+          <div class="contact-meta">
+            <div>
+              <p class="contact-meta-label">Location</p>
+              <p class="contact-meta-val">Karanganyar, Indonesia</p>
+            </div>
+            <div>
+              <p class="contact-meta-label">Available for</p>
+              <p class="contact-meta-val">Magang & Freelance</p>
+            </div>
+          </div>
+        </div>
+        <!-- Right: Form -->
+        <div class="contact-right">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xnjkdpyo"
+            method="POST"
+          >
+            <div class="contact-row">
+              <div class="contact-field">
+                <label>First Name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder="Natan"
+                  required
+                />
+              </div>
+              <div class="contact-field">
+                <label>Last Name</label>
+                <input type="text" name="lastName" placeholder="setyo" />
+              </div>
+            </div>
+            <div class="contact-field">
+              <label>Email (required)</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="email@example.com"
+                required
+              />
+            </div>
+            <div class="contact-field">
+              <label>Project description</label>
+              <textarea
+                rows="3"
+                name="message"
+                placeholder="Ceritakan proyekmu..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="contact-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="contact-bottom">
+        <div class="contact-bottom-left">
+          <a href="mailto:natansetyoa@gmail.com" class="contact-email"
+            >natansetyoa@gmail.com</a
+          >
+          <a
+            href="https://wa.me/6289618480060"
+            target="_blank"
+            class="contact-phone"
+            >+62 896-1848-0060</a
+          >
+        </div>
+        <div class="contact-socials">
+          <a
+            href="https://wa.me/6289618480060"
+            target="_blank"
+            class="contact-social-btn"
+            aria-label="WhatsApp"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/_nathansty.a?igsh=MWRkNmwxNWt1YWpzYQ%3D%3D&utm_source=qr"
+            target="_blank"
+            class="contact-social-btn"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/natan-setyo-agung-6a3763377?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+            target="_blank"
+            class="contact-social-btn"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="contact-footer">
+        © 2026 Natan Setyo Agung. All rights reserved.
+      </p>
+    </section>
+
+    <!-- Projects Javascript -->
+    <script>
+      const projects = [
+        {
+          id: 1,
+          category: "all",
+          title: "Website Company Profile Prima Tekstil",
+          desc: "Mendesain dan mengembangkan konsep situs web company profile untuk Perusahaan Tekstil.",
+          fullDesc:
+            "Mendesain dan mengembangkan konsep situs web company profile untuk Perusahaan Tekstil, sebuah studi kasus (case study) mengenai produsen kain premium. Proyek ini menampilkan rancangan profil perusahaan, produk, dan informasi kontak yang ditujukan untuk menjangkau klien B2B dan B2C. Fokus utama dari proyek ini adalah pada desain responsif, antarmuka pengguna (UI), dan user experience (UX) yang profesional.",
+          image: "",
+          techCount: 4,
+          featureCount: 9,
+          liveUrl: "#",
+          githubUrl: "#",
+          technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+        },
+        {
+          id: 2,
+          category: "all",
+          title: "Liburan Kita – Platform Pemesanan Penginapan",
+          desc: "Platform pemesanan penginapan berbasis web dengan fitur pencarian dan filter lokasi.",
+          fullDesc:
+            "Platform pemesanan penginapan berbasis web yang memungkinkan pengguna untuk mencari, memfilter, dan memesan penginapan di berbagai lokasi. Dibangun dengan antarmuka yang intuitif dan sistem pembayaran yang aman.",
+          image: "",
+          techCount: 5,
+          featureCount: 12,
+          liveUrl: "#",
+          githubUrl: "#",
+          technologies: ["React", "Node.js", "MySQL", "Tailwind CSS", "PHP"],
+        },
+        {
+          id: 3,
+          category: "all",
+          title: "Website Company Profile Kedai Kopi KenanganSenja",
+          desc: "Website company profile untuk kedai kopi lokal dengan desain modern dan elegan.",
+          fullDesc:
+            "Website company profile untuk kedai kopi lokal KenanganSenja. Menampilkan menu, lokasi, dan cerita brand dengan desain yang modern, gelap, dan elegan. Dioptimalkan untuk pengalaman mobile-first.",
+          image: "",
+          techCount: 3,
+          featureCount: 7,
+          liveUrl: "#",
+          githubUrl: "#",
+          technologies: ["HTML", "CSS", "JavaScript"],
+        },
+        {
+          id: 4,
+          category: "design",
+          title: "UI Design E-Commerce Fashion",
+          desc: "Desain antarmuka toko online fashion dengan pendekatan minimalis dan modern.",
+          fullDesc:
+            "Desain antarmuka lengkap untuk platform e-commerce fashion, mencakup halaman produk, keranjang belanja, checkout, dan dashboard pengguna. Dibuat dengan pendekatan minimalis dan clean.",
+          image: "",
+          techCount: 2,
+          featureCount: 8,
+          liveUrl: "#",
+          githubUrl: "#",
+          technologies: ["Figma", "Canva"],
+        },
+        {
+          id: 5,
+          category: "design",
+          title: "Brand Identity – Startup Tech",
+          desc: "Pembuatan identitas brand lengkap untuk startup teknologi termasuk logo dan guidelines.",
+          fullDesc:
+            "Pembuatan identitas brand lengkap untuk startup teknologi, mencakup desain logo, color palette, typography, dan brand guidelines untuk keperluan digital dan cetak.",
+          image: "",
+          techCount: 2,
+          featureCount: 6,
+          liveUrl: "#",
+          githubUrl: "#",
+          technologies: ["Figma", "Canva"],
+        },
+        {
+          id: 6,
+          category: "editing",
+          title: "Video Editing – Company Profile Video",
+          desc: "Editing video company profile profesional untuk keperluan presentasi dan media sosial.",
+          fullDesc:
+            "Editing video company profile profesional untuk keperluan presentasi dan distribusi di media sosial. Mencakup color grading, motion graphics, dan sound design.",
+          image: "",
+          techCount: 2,
+          featureCount: 5,
+          liveUrl: "#",
+          githubUrl: "#",
+          technologies: ["Canva", "Antigravity IDE"],
+        },
+      ];
+
+      let activeFilter = "all";
+
+      function renderCards(filter) {
+        const grid = document.getElementById("projects-grid");
+        const filtered =
+          filter === "all"
+            ? projects
+            : projects.filter((p) => p.category === filter);
+        grid.innerHTML = filtered
+          .map(
+            (p) => `
+                <div class="project-card" onclick="openModal(${p.id})">
+                    <div class="project-card-img-placeholder">
+                        <span>PROJECT PORTFOLIO</span>
+                        <strong>${p.title.split(" ").slice(0, 2).join(" ").toUpperCase()}</strong>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">${p.title}</h3>
+                        <p class="project-card-desc">${p.desc}</p>
+                        <div class="project-card-actions">
+                            <a href="${p.liveUrl}" class="project-card-btn" onclick="event.stopPropagation()">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> VIEW APP
+                            </a>
+                            <button class="project-card-btn" onclick="event.stopPropagation(); openModal(${p.id})">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `,
+          )
+          .join("");
+      }
+
+      function openModal(id) {
+        const p = projects.find((x) => x.id === id);
+        if (!p) return;
+        document.getElementById("modal-breadcrumb-title").textContent = p.title;
+        document.getElementById("modal-title").textContent = p.title;
+        document.getElementById("modal-desc").textContent = p.fullDesc;
+        document.getElementById("modal-tech-count").textContent = p.techCount;
+        document.getElementById("modal-feature-count").textContent =
+          p.featureCount;
+        document.getElementById("modal-live-link").href = p.liveUrl;
+        document.getElementById("modal-github-link").href = p.githubUrl;
+        document.getElementById("modal-tech-badges").innerHTML = p.technologies
+          .map(
+            (t) =>
+              `<span class="modal-tech-badge"><i class="fa-solid fa-circle-dot"></i> ${t}</span>`,
+          )
+          .join("");
+        const img = document.getElementById("modal-img");
+        if (p.image) {
+          img.src = p.image;
+          img.style.display = "block";
+        } else {
+          img.style.display = "none";
+          document.querySelector(".modal-img-frame").style.background =
+            "linear-gradient(135deg, #1a1a2e, #2a1a2e)";
+        }
+        document.getElementById("modal-overlay").classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      document.getElementById("modal-close").addEventListener("click", () => {
+        document.getElementById("modal-overlay").classList.remove("active");
+        document.body.style.overflow = "";
+      });
+
+      document
+        .getElementById("modal-overlay")
+        .addEventListener("click", (e) => {
+          if (e.target === document.getElementById("modal-overlay")) {
+            document.getElementById("modal-overlay").classList.remove("active");
+            document.body.style.overflow = "";
+          }
+        });
+
+      document.querySelectorAll(".filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          activeFilter = btn.dataset.filter;
+          renderCards(activeFilter);
+        });
+      });
+
+      renderCards("all");
+    </script>
+
+    <!-- Side Navigation Pill -->
+    <nav class="side-nav" id="side-nav">
+      <button
+        class="side-nav-toggle"
+        id="side-nav-toggle"
+        aria-label="Toggle Nav"
+      >
+        <i class="fa-solid fa-chevron-right" id="side-nav-toggle-icon"></i>
+      </button>
+      <div class="side-nav-items" id="side-nav-items">
+        <a href="#" class="side-nav-item" data-tooltip="Home">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="#about" class="side-nav-item" data-tooltip="About">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <a href="#techstack" class="side-nav-item" data-tooltip="Skills">
+          <i class="fa-solid fa-code"></i>
+        </a>
+        <a href="#projects" class="side-nav-item" data-tooltip="Projects">
+          <i class="fa-solid fa-folder"></i>
+        </a>
+        <a href="#contact" class="side-nav-item" data-tooltip="Contact Me">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Side Nav Toggle (Mobile) -->
+    <script>
+      const toggleBtn = document.getElementById("side-nav-toggle");
+      const navItems = document.getElementById("side-nav-items");
+      const toggleIcon = document.getElementById("side-nav-toggle-icon");
+      let navOpen = true;
+
+      toggleBtn.addEventListener("click", () => {
+        navOpen = !navOpen;
+        navItems.classList.toggle("collapsed", !navOpen);
+        toggleIcon.style.transform = navOpen
+          ? "rotate(0deg)"
+          : "rotate(180deg)";
+      });
+
+      // Auto-collapse on mobile on load
+      if (window.innerWidth <= 768) {
+        navOpen = false;
+        navItems.classList.add("collapsed");
+        toggleIcon.style.transform = "rotate(180deg)";
+      }
+    </script>
+
+    <!-- Side Nav Active State -->
+    <script>
+      const sections = ["about", "techstack", "projects", "contact"];
+      const navItems = document.querySelectorAll(".side-nav-item");
+
+      function updateActive() {
+        let current = "";
+        sections.forEach((id) => {
+          const el = document.getElementById(id);
+          if (el && window.scrollY >= el.offsetTop - 200) current = id;
+        });
+        navItems.forEach((item) => {
+          item.classList.remove("active");
+          const href = item.getAttribute("href").replace("#", "");
+          if (current === href || (!current && href === ""))
+            item.classList.add("active");
+        });
+      }
+
+      window.addEventListener("scroll", updateActive);
+      updateActive();
+    </script>
+
+    <!-- Theme Toggle Javascript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const themeToggleBtn = document.getElementById("theme-toggle");
+        const toggleIcon = themeToggleBtn.querySelector("i");
+
+        // Set initial toggle icon based on active theme class
+        const isDark =
+          document.documentElement.classList.contains("dark-theme");
+        updateToggleIcon(isDark);
+
+        themeToggleBtn.addEventListener("click", () => {
+          const toggledDark =
+            document.documentElement.classList.toggle("dark-theme");
+          localStorage.setItem("theme", toggledDark ? "dark" : "light");
+          updateToggleIcon(toggledDark);
+        });
+
+        function updateToggleIcon(darkActive) {
+          if (darkActive) {
+            toggleIcon.className = "fa-solid fa-sun";
+          } else {
+            toggleIcon.className = "fa-solid fa-moon";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

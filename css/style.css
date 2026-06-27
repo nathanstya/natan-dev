@@ -906,6 +906,8 @@ html.dark-theme {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -946,6 +948,9 @@ html.dark-theme {
 
 .project-card-body {
     padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .project-card-title {
@@ -966,6 +971,7 @@ html.dark-theme {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    flex: 1;
 }
 
 .project-card-actions {

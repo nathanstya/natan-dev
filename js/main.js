@@ -35,16 +35,16 @@ const projects = [
   {
     id: 3,
     category: "all",
-    title: "Website Company Profile Kedai Kopi KenanganSenja",
-    desc: "Website company profile untuk kedai kopi lokal dengan desain modern dan elegan.",
+    title: "ALLERA PHOTOGRAPHY WEBSITE",
+    desc: "Website company profile untuk Photography dengan tampilan modern dan elegan.",
     fullDesc:
-      "Website company profile untuk kedai kopi lokal KenanganSenja. Menampilkan menu, lokasi, dan cerita brand dengan desain yang modern, gelap, dan elegan. Dioptimalkan untuk pengalaman mobile-first.",
+      "Allera Photography adalah website company profile profesional yang dirancang untuk menampilkan layanan fotografi secara elegan dan modern. Website ini menghadirkan pengalaman visual premium melalui desain luxury bertema dark-gold yang berfokus pada portfolio, layanan, testimonial klien, dan informasi kontak. Dengan tampilan yang responsif dan interaktif, website ini membantu fotografer membangun identitas brand yang kuat sekaligus memudahkan calon klien untuk mengeksplorasi hasil karya dan melakukan reservasi layanan.",
     image: "",
-    techCount: 3,
-    featureCount: 7,
+    techCount: 4,
+    featureCount: 8,
     liveUrl: "#",
     githubUrl: "#",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
   },
   {
     id: 4,

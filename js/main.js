@@ -46,6 +46,20 @@ const projects = [
     githubUrl: "#",
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
   },
+  {
+    id: 4,
+    category: "personal",
+    title: "Portfolio Natan",
+    desc: "Website portofolio pribadi untuk membangun personal branding dan menampilkan proyek serta kemampuan di bidang pengembangan web.",
+    fullDesc:
+      "Website portofolio pribadi ini dirancang untuk menampilkan proyek, kemampuan teknis, serta perjalanan saya sebagai mahasiswa Teknik Informatika. Dengan desain yang modern dan responsif, website ini menjadi media untuk membangun personal branding sekaligus memperkenalkan kemampuan saya kepada recruiter dan perusahaan.Dibangun menggunakan HTML, CSS, dan JavaScript, website ini mengusung desain modern, responsif, dan interaktif agar dapat memberikan pengalaman pengguna yang nyaman di berbagai perangkat. Melalui proyek ini, saya juga menunjukkan kemampuan dalam membangun antarmuka yang menarik, menulis kode yang terstruktur, serta menerapkan praktik pengembangan web yang baik sebagai bekal untuk memulai karier di industri teknologi.",
+    image: "/images/project4.png",
+    techCount: 4,
+    featureCount: 5,
+    liveUrl: "https://natan-dev.vercel.app/",
+    githubUrl: "https://github.com/nathanstya/natan-dev",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+  },
 ];
 
 // ── Projects Render ───────────────────────────────────────────────────────────

@@ -134,6 +134,23 @@ function closeModal() {
   document.body.style.overflow = "";
 }
 
+// ── CV Modal ──────────────────────────────────────────────────────────────────
+function openCvModal() {
+  const cvOverlay = document.getElementById("cv-modal-overlay");
+  if (cvOverlay) {
+    cvOverlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+}
+
+function closeCvModal() {
+  const cvOverlay = document.getElementById("cv-modal-overlay");
+  if (cvOverlay) {
+    cvOverlay.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+}
+
 // ── Side Nav Toggle ───────────────────────────────────────────────────────────
 function initSideNav() {
   const toggleBtn = document.getElementById("side-nav-toggle");
@@ -216,6 +233,22 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("modal-overlay").addEventListener("click", (e) => {
     if (e.target === document.getElementById("modal-overlay")) closeModal();
   });
+
+  // CV Modal listeners
+  const openCvBtn = document.getElementById("open-cv-modal-btn");
+  if (openCvBtn) {
+    openCvBtn.addEventListener("click", openCvModal);
+  }
+  const closeCvBtn = document.getElementById("cv-modal-close");
+  if (closeCvBtn) {
+    closeCvBtn.addEventListener("click", closeCvModal);
+  }
+  const cvOverlay = document.getElementById("cv-modal-overlay");
+  if (cvOverlay) {
+    cvOverlay.addEventListener("click", (e) => {
+      if (e.target === cvOverlay) closeCvModal();
+    });
+  }
 
   // Nav
   initSideNav();

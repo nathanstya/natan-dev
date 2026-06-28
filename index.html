@@ -75,7 +75,7 @@
         <div class="arch-frame">
           <img
             src="images/natan.png"
-            alt="Solt - UI/UX & Brand Designer"
+            alt="Natan - Full Stack Developer"
             class="portrait-img"
           />
         </div>
@@ -135,10 +135,10 @@
           <div class="about-divider-bottom"></div>
 
           <div class="about-actions">
-            <a href="#contact" class="about-cv-btn">
-              <span>Download CV</span>
-              <i class="fa-solid fa-download"></i>
-            </a>
+            <button type="button" class="about-cv-btn" id="open-cv-modal-btn">
+              <span>Lihat CV</span>
+              <i class="fa-solid fa-eye"></i>
+            </button>
             <div class="social-links">
               <a
                 href="https://www.instagram.com/_nathansty.a?igsh=MWRkNmwxNWt1YWpzYQ%3D%3D&utm_source=qr"
@@ -390,6 +390,38 @@
               <img src="" alt="" id="modal-img" class="modal-img" />
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CV Viewer Modal -->
+    <div class="cv-modal-overlay" id="cv-modal-overlay">
+      <div class="cv-modal-box">
+        <div class="cv-modal-header">
+          <div class="cv-modal-title-wrap">
+            <i class="fa-solid fa-file-pdf cv-icon"></i>
+            <span class="cv-modal-title">Curriculum Vitae - Natan Setyo Agung</span>
+          </div>
+          <div class="cv-modal-actions">
+            <a
+              href="assets/cv natan-junior-fullstack.pdf"
+              download
+              class="cv-modal-download-btn"
+            >
+              <i class="fa-solid fa-download"></i>
+              <span>Download PDF</span>
+            </a>
+            <button type="button" class="cv-modal-close-btn" id="cv-modal-close" aria-label="Close CV Modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+        <div class="cv-modal-body">
+          <iframe
+            src="assets/cv natan-junior-fullstack.pdf"
+            class="cv-iframe"
+            title="CV Natan Setyo Agung"
+          ></iframe>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@
 const projects = [
   {
     id: 1,
-    category: "all",
+    category: "personal",
     title: "Website Company Profile Vannes Jasmine Laundry",
     desc: "Mendesain dan mengembangkan konsep situs web company profile untuk UMKM .",
     fullDesc:
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 2,
-    category: "all",
+    category: "academic",
     title: "AI Recommendation Engine",
     desc: "Aplikasi web berbasis Artificial Intelligence yang dirancang untuk membantu pengguna.",
     fullDesc:
@@ -34,59 +34,17 @@ const projects = [
   },
   {
     id: 3,
-    category: "all",
+    category: "personal",
     title: "ALLERA PHOTOGRAPHY WEBSITE",
     desc: "Website company profile untuk Photography dengan tampilan modern dan elegan.",
     fullDesc:
       "Allera Photography adalah website company profile profesional yang dirancang untuk menampilkan layanan fotografi secara elegan dan modern. Website ini menghadirkan pengalaman visual premium melalui desain luxury bertema dark-gold yang berfokus pada portfolio, layanan, testimonial klien, dan informasi kontak. Dengan tampilan yang responsif dan interaktif, website ini membantu fotografer membangun identitas brand yang kuat sekaligus memudahkan calon klien untuk mengeksplorasi hasil karya dan melakukan reservasi layanan.",
-    image: "",
+    image: "/images/project3.png",
     techCount: 4,
     featureCount: 8,
     liveUrl: "#",
     githubUrl: "#",
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-  },
-  {
-    id: 4,
-    category: "design",
-    title: "UI Design E-Commerce Fashion",
-    desc: "Desain antarmuka toko online fashion dengan pendekatan minimalis dan modern.",
-    fullDesc:
-      "Desain antarmuka lengkap untuk platform e-commerce fashion, mencakup halaman produk, keranjang belanja, checkout, dan dashboard pengguna. Dibuat dengan pendekatan minimalis dan clean.",
-    image: "",
-    techCount: 2,
-    featureCount: 8,
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Figma", "Canva"],
-  },
-  {
-    id: 5,
-    category: "design",
-    title: "Brand Identity – Startup Tech",
-    desc: "Pembuatan identitas brand lengkap untuk startup teknologi termasuk logo dan guidelines.",
-    fullDesc:
-      "Pembuatan identitas brand lengkap untuk startup teknologi, mencakup desain logo, color palette, typography, dan brand guidelines untuk keperluan digital dan cetak.",
-    image: "",
-    techCount: 2,
-    featureCount: 6,
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Figma", "Canva"],
-  },
-  {
-    id: 6,
-    category: "editing",
-    title: "Video Editing – Company Profile Video",
-    desc: "Editing video company profile profesional untuk keperluan presentasi dan media sosial.",
-    fullDesc:
-      "Editing video company profile profesional untuk keperluan presentasi dan distribusi di media sosial. Mencakup color grading, motion graphics, dan sound design.",
-    image: "",
-    techCount: 2,
-    featureCount: 5,
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Canva", "Antigravity IDE"],
   },
 ];
 

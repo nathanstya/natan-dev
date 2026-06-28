@@ -403,25 +403,17 @@
             <span class="cv-modal-title">Curriculum Vitae - Natan Setyo Agung</span>
           </div>
           <div class="cv-modal-actions">
-            <a
-              href="assets/cv natan-junior-fullstack.pdf"
-              download
-              class="cv-modal-download-btn"
-            >
-              <i class="fa-solid fa-download"></i>
-              <span>Download PDF</span>
-            </a>
             <button type="button" class="cv-modal-close-btn" id="cv-modal-close" aria-label="Close CV Modal">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
         </div>
-        <div class="cv-modal-body">
-          <iframe
-            src="assets/cv natan-junior-fullstack.pdf"
-            class="cv-iframe"
-            title="CV Natan Setyo Agung"
-          ></iframe>
+        <div class="cv-modal-body" id="cv-modal-body">
+          <div class="cv-loading-spinner" id="cv-loading-spinner">
+            <i class="fa-solid fa-spinner fa-spin"></i>
+            <span>Memuat CV...</span>
+          </div>
+          <div class="cv-canvas-container" id="cv-canvas-container"></div>
         </div>
       </div>
     </div>
@@ -564,6 +556,8 @@
       </div>
     </nav>
 
+    <!-- PDF.js library for viewing PDF on Canvas without direct download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

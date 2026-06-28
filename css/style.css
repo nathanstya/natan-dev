@@ -1670,34 +1670,84 @@ html.dark-theme {
 
 .cv-modal-body {
     flex: 1;
-    background: #0f0f13;
+    background: #0d0d12;
     position: relative;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.cv-iframe {
+.cv-loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 4rem 0;
+    color: #aaaaaa;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.cv-loading-spinner i {
+    font-size: 2rem;
+    color: #ff4d4d;
+}
+
+.cv-canvas-container {
     width: 100%;
-    height: 100%;
-    border: none;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
-@media (max-width: 600px) {
+.cv-page-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.cv-page-canvas {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+@media (max-width: 768px) {
     .cv-modal-overlay {
-        padding: 0.5rem;
+        padding: 0;
     }
     .cv-modal-box {
-        height: 95vh;
-        border-radius: 12px;
+        height: 100vh;
+        height: 100dvh;
+        border-radius: 0;
+        border: none;
     }
     .cv-modal-header {
         padding: 0.8rem 1rem;
     }
     .cv-modal-title {
         font-size: 0.85rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 220px;
     }
-    .cv-modal-download-btn span {
-        display: none;
+    .cv-modal-body {
+        padding: 1rem 0.5rem;
     }
-    .cv-modal-download-btn {
-        padding: 0.55rem 0.8rem;
+    .cv-canvas-container {
+        gap: 1rem;
     }
 }

@@ -135,11 +135,71 @@ function closeModal() {
 }
 
 // ── CV Modal ──────────────────────────────────────────────────────────────────
+let cvPdfLoaded = false;
+
+function renderCvPdf() {
+  if (cvPdfLoaded) return;
+  const container = document.getElementById("cv-canvas-container");
+  const spinner = document.getElementById("cv-loading-spinner");
+  if (!container) return;
+
+  if (typeof pdfjsLib === "undefined") {
+    if (spinner) spinner.innerHTML = "<span>Gagal memuat PDF viewer.</span>";
+    return;
+  }
+
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+  pdfjsLib
+    .getDocument("assets/cv natan-junior-fullstack.pdf")
+    .promise.then((pdf) => {
+      cvPdfLoaded = true;
+      if (spinner) spinner.style.display = "none";
+      container.innerHTML = "";
+
+      for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+        pdf.getPage(pageNum).then((page) => {
+          const pageWrapper = document.createElement("div");
+          pageWrapper.className = "cv-page-wrapper";
+
+          const canvas = document.createElement("canvas");
+          canvas.className = "cv-page-canvas";
+          // Prevent right click
+          canvas.addEventListener("contextmenu", (e) => e.preventDefault());
+
+          pageWrapper.appendChild(canvas);
+          container.appendChild(pageWrapper);
+
+          const context = canvas.getContext("2d");
+          // Use high scale for crisp text rendering
+          const viewport = page.getViewport({ scale: 2.0 });
+
+          canvas.height = viewport.height;
+          canvas.width = viewport.width;
+
+          const renderContext = {
+            canvasContext: context,
+            viewport: viewport,
+          };
+          page.render(renderContext);
+        });
+      }
+    })
+    .catch((err) => {
+      console.error("Error loading CV PDF:", err);
+      if (spinner) {
+        spinner.innerHTML = "<span>Terjadi kesalahan saat memuat dokumen CV.</span>";
+      }
+    });
+}
+
 function openCvModal() {
   const cvOverlay = document.getElementById("cv-modal-overlay");
   if (cvOverlay) {
     cvOverlay.classList.add("active");
     document.body.style.overflow = "hidden";
+    renderCvPdf();
   }
 }
 
